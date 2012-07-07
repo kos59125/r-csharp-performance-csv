@@ -1,0 +1,5 @@
+repo: fe2aae960f9f0b5bc3503d02aaab96e62effef94
+node: a833e72cbf58e7aba61447f16af2809eec9f4f0a
+branch: default
+latesttag: R.NET 1.4.1
+latesttagdistance: 23
