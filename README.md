@@ -1,9 +1,9 @@
 r-csharp-performance-csv
 ========================
 
-R と C# のパフォーマンス比較 (CSV)
-
 [郵便番号データ (KEN_ALL.CSV)](http://www.post.japanpost.jp/zipcode/dl/kogaki.html) を利用して R と C# で読み取り速度を比較。
+
+CSV リーダーは自作ライブラリーを使用 (ライター等も含んだ完全版は [Bitbucket](https://bitbucket.org/kos59125/recyclebin-commons/) で公開)。
 
 項目
 ----
@@ -27,3 +27,4 @@ R と C# のパフォーマンス比較 (CSV)
 --------
 
 C# のオブジェクトマッピングについては Parser クラスのインスタンスをキャッシュせずにフィールドごとに毎回生成しているので遅い。
+本当はもっと速くできるはず。
