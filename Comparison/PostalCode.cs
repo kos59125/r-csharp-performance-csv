@@ -26,30 +26,30 @@ namespace Comparison
       public string 市区町村名 { get; set; }
       [Column(8)]
       public string 町域名 { get; set; }
-      //[Column(9, ParserType = typeof(EnumParser<該当>))]
-      //public 該当 一町域が二以上の郵便番号で表される場合の表示 { get; set; }
-      //[Column(10, ParserType = typeof(EnumParser<該当>))]
-      //public 該当 小字毎に番地が起番されている町域の表示 { get; set; }
-      //[Column(11, ParserType = typeof(EnumParser<該当>))]
-      //public 該当 丁目を有する町域の場合の表示 { get; set; }
-      //[Column(12, ParserType = typeof(EnumParser<該当>))]
-      //public 該当 一つの郵便番号で二以上の町域を表す場合の表示 { get; set; }
-      //[Column(13, ParserType = typeof(EnumParser<更新>))]
-      //public 更新 更新の表示 { get; set; }
-      //[Column(14, ParserType = typeof(EnumParser<該当>))]
-      //public 変更 変更の理由 { get; set; }
-      [Column(9)]
-      public string 一町域が二以上の郵便番号で表される場合の表示 { get; set; }
-      [Column(10)]
-      public string 小字毎に番地が起番されている町域の表示 { get; set; }
-      [Column(11)]
-      public string 丁目を有する町域の場合の表示 { get; set; }
-      [Column(12)]
-      public string 一つの郵便番号で二以上の町域を表す場合の表示 { get; set; }
-      [Column(13)]
-      public string 更新の表示 { get; set; }
-      [Column(14)]
-      public string 変更の理由 { get; set; }
+      [Column(9, ParserType = typeof(EnumParser<該当>))]
+      public 該当 一町域が二以上の郵便番号で表される場合の表示 { get; set; }
+      [Column(10, ParserType = typeof(EnumParser<該当>))]
+      public 該当 小字毎に番地が起番されている町域の表示 { get; set; }
+      [Column(11, ParserType = typeof(EnumParser<該当>))]
+      public 該当 丁目を有する町域の場合の表示 { get; set; }
+      [Column(12, ParserType = typeof(EnumParser<該当>))]
+      public 該当 一つの郵便番号で二以上の町域を表す場合の表示 { get; set; }
+      [Column(13, ParserType = typeof(EnumParser<更新>))]
+      public 更新 更新の表示 { get; set; }
+      [Column(14, ParserType = typeof(EnumParser<該当>))]
+      public 変更 変更の理由 { get; set; }
+      //[Column(9)]
+      //public string 一町域が二以上の郵便番号で表される場合の表示 { get; set; }
+      //[Column(10)]
+      //public string 小字毎に番地が起番されている町域の表示 { get; set; }
+      //[Column(11)]
+      //public string 丁目を有する町域の場合の表示 { get; set; }
+      //[Column(12)]
+      //public string 一つの郵便番号で二以上の町域を表す場合の表示 { get; set; }
+      //[Column(13)]
+      //public string 更新の表示 { get; set; }
+      //[Column(14)]
+      //public string 変更の理由 { get; set; }
    }
 
    public enum 該当
