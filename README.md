@@ -3,7 +3,7 @@ r-csharp-performance-csv
 
 [郵便番号データ (KEN_ALL.CSV)](http://www.post.japanpost.jp/zipcode/dl/kogaki.html) を利用して R と C# で読み取り速度を比較。
 
-CSV リーダーは自作ライブラリーを使用 (ライター等も含んだ完全版は [Bitbucket](https://bitbucket.org/kos59125/recyclebin-commons/) で公開)。
+CSV リーダーは自作ライブラリーを使用 ([TextTables](https://github.com/kos59125/TextTables) で公開)。
 
 項目
 ----
