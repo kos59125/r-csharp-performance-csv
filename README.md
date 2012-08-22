@@ -16,15 +16,10 @@ CSV リーダーは自作ライブラリーを使用 (ライター等も含ん�
 結果
 ----
 
-1 回のみの計測。
+10 回計測しての平均値。
 
-* C# オブジェクトマッピング: 7.57 sec
-* C# 文字列配列: 0.46 sec
-* R stringsAsFactors=TRUE: 8.51 sec
-* R stringsAsFactors=FALSE: 3.48 sec
+* C# オブジェクトマッピング: 2.749 sec
+* C# 文字列配列: 0.640 sec
+* R stringsAsFactors=TRUE: 7.454 sec
+* R stringsAsFactors=FALSE: 3.116 sec
 
-コメント
---------
-
-C# のオブジェクトマッピングについては Parser クラスのインスタンスをキャッシュせずにフィールドごとに毎回生成しているので遅い。
-本当はもっと速くできるはず。

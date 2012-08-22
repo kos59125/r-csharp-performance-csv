@@ -34,8 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RDotNet">
+      <HintPath>..\packages\R.NET.1.5.0\lib\net40\RDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RDotNet.NativeLibrary">
+      <HintPath>..\packages\R.NET.1.5.0\lib\net40\RDotNet.NativeLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,19 +58,12 @@
     <None Include="KEN_ALL.CSV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CSV\CSV.csproj">
-      <Project>{8B6E5F6E-C31A-49CA-A2B5-B16F16157EBE}</Project>
-      <Name>CSV</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\rdotnet_a833e72cbf58\R.NET\RDotNet.csproj">
-      <Project>{0923E1A0-2032-4997-AB73-49E42C4034A9}</Project>
-      <Name>RDotNet</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\rdotnet_a833e72cbf58\RDotNet.NativeLibrary\RDotNet.NativeLibrary.csproj">
-      <Project>{2A089A59-0F22-4484-B442-0FE8BDA10879}</Project>
-      <Name>RDotNet.NativeLibrary</Name>
+    <ProjectReference Include="..\TextTables\RecycleBin.TextTables\RecycleBin.TextTables.csproj">
+      <Project>{81709BD3-1139-46BF-8115-3CC6B6EF4E6D}</Project>
+      <Name>RecycleBin.TextTables</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
