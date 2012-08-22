@@ -1,0 +1,3 @@
+[submodule "TextTables"]
+	path = TextTables
+	url = git@github.com:kos59125/TextTables.git
